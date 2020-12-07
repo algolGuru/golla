@@ -1,0 +1,321 @@
+/* Eric Meyer's CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+  height: 100%;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  line-height: 1.5em;
+  font-size: 16px;
+  height: 100%;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 100% !important;
+}
+
+.inner {
+  max-width: 1190px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  z-index: 10;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.274);
+}
+
+header .inner {
+  padding: 20px 20px;
+}
+
+header .inner .header_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Merriweather", serif;
+  font-size: 40px;
+  color: #0e2431;
+  border-bottom: 2px solid #0e2431;
+  border-left: 2px solid #0e2431;
+  padding: 15px;
+}
+
+.logo_title {
+  margin-top: 5px;
+}
+
+.logo_subtitle {
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.navigation,
+.time {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.navigation img,
+.time img {
+  width: 40px;
+}
+
+.navigation_link,
+.navigation_time {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0e2431;
+  text-decoration: none;
+  transition: 0.1s;
+  padding: 10px;
+}
+
+.navigation_link:hover {
+  color: rgb(0, 0, 0);
+}
+
+nav {
+  align-items: center;
+  display: flex;
+}
+
+.social {
+  margin: 0 15px;
+}
+
+.social img {
+  width: 40px;
+}
+/* 
+.bg {
+  display: block;
+  fill: #ffce59;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: url(img/bg1.jpg);
+  max-height: 80vh;
+  min-height: 80vh;
+  z-index: -1111;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: kenburns-left 15s ease-out both;
+} */
+
+/* --------------------------- */
+img {
+  vertical-align: middle;
+}
+
+.my_slider {
+  max-width: 1190px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 25px;
+}
+
+.mySlide img {
+  text-align: center;
+  height: 60vh;
+  margin: auto;
+}
+
+.mySlide img {
+  max-width: 100%;
+}
+
+footer a {
+  width: 20%;
+}
+
+.link_button {
+  padding: 15px 30px;
+  width: 100%;
+  background-color: #fff;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 0%;
+  border: 1px solid #000;
+  border-right: none;
+  transition: 0.2s  ;
+}
+
+.link_button:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+footer a:last-child .link_button {
+  border-right: 1px solid #000;
+}
+
+@-webkit-keyframes kenburns-left {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 16% 50%;
+    transform-origin: 16% 50%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(-20px, 15px);
+    transform: scale(1.25) translate(-20px, 15px);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+}
+@keyframes kenburns-left {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 16% 50%;
+    transform-origin: 16% 50%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(-20px, 15px);
+    transform: scale(1.25) translate(-20px, 15px);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+}
